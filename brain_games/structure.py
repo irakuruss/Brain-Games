@@ -1,12 +1,13 @@
 import prompt
-from brain_games.scripts.brain_games import main
 
 
 attemps = 3
 
 
 def structure(game):
-    user_name = main()
+    print('Welcome to the Brain Games!')
+    user_name = prompt.string('May I have your name? ')
+    print(f'Hello, {user_name}!')
     print(game.game_rules)
     for _ in range(attemps):
         num, correct_answer = game.determine_num_and_answer()
@@ -24,3 +25,4 @@ def structure(game):
 def game_over(answer, correct_answer, user_name):
     print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
     print(f"Let's try again, {user_name}!")
+
