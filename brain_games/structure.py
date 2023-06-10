@@ -1,5 +1,5 @@
 import prompt
-from scripts.brain_games import main
+from brain_games.scripts.brain_games import main
 
 
 attemps = 3
