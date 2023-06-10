@@ -23,6 +23,6 @@ def structure(game):
 
 
 def game_over(answer, correct_answer, user_name):
-    print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
+    print(f"'{answer}' is wrong answer ;(. Correct "
+          f"answer was '{correct_answer}'")
     print(f"Let's try again, {user_name}!")
-
