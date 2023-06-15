@@ -14,8 +14,8 @@ def determine_num_and_answer():
     for _ in range(sequence_length):
         subsequence.append(i)
         i += step
-    missing_num = subsequence.pop(missing_position-1)
-    subsequence.insert(missing_position-1, '..')
+    missing_num = subsequence.pop(missing_position - 1)
+    subsequence.insert(missing_position - 1, '..')
     nums = ''
     for i in range(sequence_length):
         nums += str(subsequence[i]) + ' '
