@@ -7,8 +7,8 @@ game_rules = 'What number is missing in the progression?'
 def determine_num_and_answer():
     step = randint(1, 50)
     first_num = randint(1, 100)
-    sequence_length = randint(4, 9)
-    missing_position = randint(4, sequence_length)
+    sequence_length = randint(5, 9)
+    missing_position = randint(5, sequence_length)
     subsequence = []
     i = first_num
     for _ in range(sequence_length):
