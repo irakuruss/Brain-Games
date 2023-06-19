@@ -4,20 +4,30 @@ from random import randint
 game_rules = 'What number is missing in the progression?'
 
 
-def determine_num_and_answer():
-    step = randint(1, 50)
-    first_num = randint(1, 100)
-    sequence_length = randint(5, 9)
-    missing_position = randint(5, sequence_length)
-    subsequence = []
+def find_progressions_terms():
+    START_NUM = 1
+    LAST_NUM = 100
+    START_PROGRESSION = 5
+    END_PROGRESSION = 10
+    step = randint(START_NUM, LAST_NUM)
+    first_num = randint(START_NUM, LAST_NUM)
+    progression_length = randint(START_PROGRESSION, END_PROGRESSION)
+    missing_position = randint(START_PROGRESSION, progression_length)
+    progression = []
     i = first_num
-    for _ in range(sequence_length):
-        subsequence.append(i)
+    for _ in range(progression_length):
+        progression.append(str(i))
         i += step
-    missing_num = subsequence.pop(missing_position - 1)
-    subsequence.insert(missing_position - 1, '..')
-    nums = ''
-    for i in range(sequence_length):
-        nums += str(subsequence[i]) + ' '
-    nums = nums.strip()
-    return nums, str(missing_num)
+    return progression, missing_position
+
+
+def hiding_element():
+    progression, missing_position = find_progressions_terms()
+    missing_num = progression.pop(missing_position - 1)
+    progression.insert(missing_position - 1, '..')
+    progression_string = ' '.join(progression)
+    return progression_string, str(missing_num)
+
+
+def determine_num_and_answer():
+    return hiding_element()

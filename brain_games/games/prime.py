@@ -5,7 +5,9 @@ game_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def determine_num_and_answer():
-    num = randint(1, 1000)
+    START_NUM = 1
+    LAST_NUM = 1000
+    num = randint(START_NUM, LAST_NUM)
     correct_answer = 'yes' if is_prime(num) else 'no'
 
     return num, correct_answer

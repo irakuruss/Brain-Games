@@ -6,7 +6,10 @@ game_rules = 'Find the greatest common divisor of given numbers.'
 
 
 def determine_num_and_answer():
-    num1, num2 = randint(1, 100), randint(1, 100)
+    START_NUM = 1
+    LAST_NUM = 100
+    num1 = randint(START_NUM, LAST_NUM)
+    num2 = randint(START_NUM, LAST_NUM)
 
     correct_answer = gcd(num1, num2)
 
