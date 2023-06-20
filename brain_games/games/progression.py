@@ -1,7 +1,7 @@
 from random import randint
 
 
-game_rules = 'What number is missing in the progression?'
+GAME_RULES = 'What number is missing in the progression?'
 
 
 def find_progressions_terms():
