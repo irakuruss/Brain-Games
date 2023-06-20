@@ -5,7 +5,7 @@ from math import gcd
 GAME_RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def determine_num_and_answer():
+def determine_task_and_answer():
     START_NUM = 1
     LAST_NUM = 100
     num1 = randint(START_NUM, LAST_NUM)
@@ -13,5 +13,5 @@ def determine_num_and_answer():
 
     correct_answer = gcd(num1, num2)
 
-    nums = str(num1) + ' ' + str(num2)
-    return nums, str(correct_answer)
+    task = str(num1) + ' ' + str(num2)
+    return task, str(correct_answer)
