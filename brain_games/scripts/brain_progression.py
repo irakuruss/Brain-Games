@@ -1,9 +1,9 @@
-from brain_games.structure import structure
+from brain_games.structure import engine
 from brain_games.games import progression
 
 
 def main():
-    structure(progression)
+    engine(progression)
 
 
 if __name__ == '__main__':
