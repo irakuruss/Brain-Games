@@ -1,15 +1,15 @@
 import prompt
 
 
-attemps = 3
+ATTEMPS = 3
 
 
-def structure(game):
+def engine(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
     print(game.GAME_RULES)
-    for _ in range(attemps):
+    for _ in range(ATTEMPS):
         num, correct_answer = game.determine_num_and_answer()
         print(f'Question: {num}')
         answer = prompt.string('Your answer: ')
