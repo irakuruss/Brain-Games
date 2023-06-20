@@ -21,13 +21,9 @@ def find_progressions_terms():
     return progression, missing_position
 
 
-def hiding_element():
+def determine_task_and_answer():
     progression, missing_position = find_progressions_terms()
     missing_num = progression.pop(missing_position - 1)
     progression.insert(missing_position - 1, '..')
     progression_string = ' '.join(progression)
     return progression_string, str(missing_num)
-
-
-def determine_task_and_answer():
-    return hiding_element()
