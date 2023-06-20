@@ -8,7 +8,7 @@ def structure(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print(game.game_rules)
+    print(game.GAME_RULES)
     for _ in range(attemps):
         num, correct_answer = game.determine_num_and_answer()
         print(f'Question: {num}')
