@@ -1,14 +1,12 @@
 import prompt
 
 
-ATTEMPS = 3
-
-
 def engine(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
     print(game.GAME_RULES)
+    ATTEMPS = 3
     for _ in range(ATTEMPS):
         task, correct_answer = game.determine_task_and_answer()
         print(f'Question: {task}')
