@@ -29,5 +29,5 @@ def hiding_element():
     return progression_string, str(missing_num)
 
 
-def determine_num_and_answer():
+def determine_task_and_answer():
     return hiding_element()
