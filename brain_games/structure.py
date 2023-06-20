@@ -10,8 +10,8 @@ def engine(game):
     print(f'Hello, {user_name}!')
     print(game.GAME_RULES)
     for _ in range(ATTEMPS):
-        num, correct_answer = game.determine_num_and_answer()
-        print(f'Question: {num}')
+        task, correct_answer = game.determine_task_and_answer()
+        print(f'Question: {task}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
