@@ -1,7 +1,7 @@
 from random import randint
 
 
-game_rules = 'What is the result of the expression?'
+GAME_RULES = 'What is the result of the expression?'
 
 
 def determine_num_and_answer():
