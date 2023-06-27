@@ -3,11 +3,11 @@ from math import gcd
 
 
 GAME_RULES = 'Find the greatest common divisor of given numbers.'
+START_NUM = 1
+LAST_NUM = 100
 
 
 def determine_task_and_answer():
-    START_NUM = 1
-    LAST_NUM = 100
     num1 = randint(START_NUM, LAST_NUM)
     num2 = randint(START_NUM, LAST_NUM)
 
