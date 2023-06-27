@@ -12,7 +12,8 @@ def determine_progressions_terms():
     difference = randint(START_NUM, LAST_NUM)
     initial_term = randint(START_NUM, LAST_NUM)
     progression_length = randint(MIN_LENGTH, MAX_LENGTH)
-    progression = list(range(initial_term, progression_length * difference + initial_term, difference))
+    progression = list(range(initial_term, progression_length * difference
+                             + initial_term, difference))
     return progression
 
 
@@ -20,6 +21,7 @@ def determine_task_and_answer():
     progression = determine_progressions_terms()
     correct_answer = choice(progression)
     task = ' '.join(
-        '..' if number == correct_answer else str(number) for number in progression
+        '..' if number == correct_answer else str(number)
+        for number in progression
     )
     return task, str(correct_answer)
