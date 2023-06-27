@@ -2,11 +2,11 @@ from random import randint
 
 
 GAME_RULES = 'What is the result of the expression?'
+START_NUM = 1
+LAST_NUM = 100
 
 
 def determine_task_and_answer():
-    START_NUM = 1
-    LAST_NUM = 100
     num1 = randint(START_NUM, LAST_NUM)
     num2 = randint(START_NUM, LAST_NUM)
     math_operations = ['+', '-', '*']
