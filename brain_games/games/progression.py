@@ -18,7 +18,8 @@ def determine_progressions_terms(start_num, last_num, min_length, max_length):
 
 
 def determine_task_and_answer():
-    progression = determine_progressions_terms(START_NUM, LAST_NUM, MIN_LENGTH, MAX_LENGTH)
+    progression = determine_progressions_terms(START_NUM, LAST_NUM,
+                                               MIN_LENGTH, MAX_LENGTH)
     correct_answer = choice(progression)
     task = ' '.join(
         '..' if number == correct_answer else str(number)
